@@ -19,9 +19,10 @@
 */
 
 header h1 {
-  font-weight: normal;
+  font-weight: 900;
   font-style: italic;
   font-size: 200px;
+  font-family: "orbitron";
   color: hotpink;
 }
 main p {
@@ -32,3 +33,16 @@ main p {
   font-family: "arial", "돋움"; */
   font: 16px/2 "arial", "돋움";
 }
+
+/*
+  렌더링 동작 방식
+  - html태그를 해석해서 DOM생성 (Document Object Model)
+  - css를 해석해서 CSSDOM 생성
+  - 위의 객체가 생성되기 전까지는 화면렌더링 블록됨
+
+  구글 웹폰트를 <link>방식으로 연결하는게 좋은 이유
+  - DOM생성시 서버에서 폰트를 사전에 미리 다운로드
+  - 많은 웹폰트 연결로 인해 화면 렌더링 지연을 최소화 가능
+  - layout shifting 방지 가능 (컨텐츠의 재구성으로 높이값이 어긋나 덜컹거리는 현상)
+  - link방식은 한번 다운로드 받은 폰트의 캐싱처리로 인해 layout shifting최소화
+*/
