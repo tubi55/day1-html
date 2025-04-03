@@ -1,7 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  color: black;
+  /* 부모요소에 색상 적용시 자식에 자동 색상 상속시키기 위함 */
+  color: inherit;
 }
 ul,
 ol {
