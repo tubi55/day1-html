@@ -25,9 +25,10 @@ header h1 {
   color: hotpink;
 }
 main p {
-  font-weight: bold;
+  /* font-weight: bold;
   font-style: italic;
   font-size: 12px;
   line-height: 2;
-  font-family: "arial", "돋움";
+  font-family: "arial", "돋움"; */
+  font: 16px/2 "arial", "돋움";
 }
