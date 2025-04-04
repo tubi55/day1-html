@@ -15,6 +15,7 @@ header h1 {
 
 header nav a {
   font: 500 16px/1 "orbitron";
+  letter-spacing: 1px;
   margin-right: 30px;
 }
 
@@ -41,7 +42,7 @@ main p {
   text-align: justify;
 }
 main a {
-  background-color: cornflowerblue;
+  background-color: black;
   font-weight: bold;
   font-size: 12px;
   color: white;
@@ -54,9 +55,14 @@ main a {
 }
 
 /* footer */
+footer {
+  border-top: 1px solid black;
+}
 footer ul {
-  font-size: 100px;
-  color: aqua;
+  font-size: 20px;
+}
+footer p {
+  font-size: 14px;
 }
 
 /* 
