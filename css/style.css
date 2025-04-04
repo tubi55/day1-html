@@ -3,11 +3,6 @@
 body {
   padding: 100px;
 }
-header,
-main,
-footer {
-  border: 1px solid gray;
-}
 
 /*header*/
 header {
@@ -34,11 +29,15 @@ main h1 {
 main figure {
   width: 300px;
   height: 300px;
-  border: 3px solid red;
+  margin-bottom: 30px;
 }
 main p {
+  width: 50%;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: justify;
+  border: 1px solid red;
 }
 
 /* footer */
@@ -46,3 +45,11 @@ footer ul {
   font-size: 100px;
   color: aqua;
 }
+
+/* 
+  정렬 기능 (text-align) 
+  -블록요소에 정렬기능 지정
+  -블록요소 안쪽에 있는 인라인 요소들이 정렬됨
+  -left, center, right, justify 
+  -justify는 단어사이의 간격을 조절해서 양쪽을 맞추는 방식
+*/
