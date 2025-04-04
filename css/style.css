@@ -63,6 +63,11 @@ main a {
   text-align: center;
   line-height: 30px;
   border-radius: 15px;
+  transition: 0.5s;
+}
+main a:hover {
+  width: 150px;
+  background-color: hotpink;
 }
 
 /* footer */
@@ -83,7 +88,22 @@ footer p {
 }
 
 /*
-  rem 단위의 개념
-  - 웹에서 텍스트 크기 지정할때 주로 쓰이는 단위
-  - 1rem = 16px;
+  요소명:hover (가상선택자)
+  - 요소에 마우스를 올렸을때 변경되는 구문을 설정
+
+  투명도 설정
+  opacity: 0.5; (반투명 처리 0~1)
+
+  전환효과 설정
+  - transition: 0.5s; (0.5초 동안 변경구문에 대한 전환모션 적용)
+  - 주의점 : hover문이 아닌 원본 요소에 적용
+
+  요소 변형 효과
+  transform: translateX(10px); 10px만큼 가로로 이동
+  transform: translateY(10px); 10px만큼 세로로 이동
+  transform: rotate(45deg); 45도 만큼 회전
+  transform: scale(1.5); 1.5배 만큼 확대
+  transform: skewX(35deg); 35도 만큼 가로로 비틀기
+
+  주의: 요소변형은 block이나 inline-block요소에만 적용됨
 */
