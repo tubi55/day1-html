@@ -1,3 +1,7 @@
+:root {
+  --point-color: cornflowerblue;
+}
+
 html {
   /* html의 폰트 크기 지정시 기본 rem단위 수정 가능 */
   font-size: 16px;
