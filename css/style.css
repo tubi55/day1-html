@@ -37,7 +37,17 @@ main p {
   line-height: 1.5;
   margin-bottom: 30px;
   text-align: justify;
-  border: 1px solid red;
+}
+main a {
+  background-color: cornflowerblue;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  width: 100px;
+  height: 34px;
+  display: inline-block;
+  text-align: center;
+  line-height: 34px;
 }
 
 /* footer */
@@ -52,4 +62,9 @@ footer ul {
   -블록요소 안쪽에 있는 인라인 요소들이 정렬됨
   -left, center, right, justify 
   -justify는 단어사이의 간격을 조절해서 양쪽을 맞추는 방식
+*/
+
+/* 
+  각 요소의 특정을 강제 변경 처리
+  display: block / inline / inline-block 
 */
