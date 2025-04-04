@@ -24,3 +24,17 @@ img {
   height: 100%;
   object-fit: cover;
 }
+/* 
+  margin: 0px auto; 블록요소 자체를 가운데 배치
+  text-align: center; 블록요소 안쪽의 인라인요소를 가운데 배치
+*/
+article {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  margin: 50px auto;
+  text-align: center;
+}
+article span {
+  font-size: 2rem;
+}
