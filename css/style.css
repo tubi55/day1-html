@@ -22,7 +22,8 @@ header h1 {
   margin-bottom: 20px;
   font-size: 3rem;
   text-align: center;
-  color: rgba(var(--point-rgb), 0.5);
+  /* color: rgba(var(--point-rgb), 0.5); */
+  color: var(--point-lch);
 }
 
 header nav a {

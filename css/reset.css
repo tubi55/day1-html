@@ -1,14 +1,11 @@
 /*
-  웹에서의 색상 표현 방식
-  - rgb(빛의 삼원색 , red, green, blue)
-  - 가산 혼합방식 : 색상이 겹칠수록 더 밝아지는 개념
-  - 각 색깔별 허용치 (0~255)
-  - rgba를 쓰면 마지만 alpha값 투명도 조절 가능
+  lch (lightness, chroma, hue) 색상 표현 방식
 */
 
 :root {
   --point-color: rgba(255, 105, 180, 0.5);
   --point-rgb: 255, 105, 100;
+  --point-lch: lch(70% 60 180 / 0.5);
 }
 
 html {
