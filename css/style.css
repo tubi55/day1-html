@@ -3,19 +3,45 @@
 body {
   padding: 100px;
 }
+header,
+main,
+footer {
+  border: 1px solid gray;
+}
 
+/*header*/
+header {
+  margin-bottom: 80px;
+}
 header h1 {
-  font: 600 40px/1 "orbitron";
+  font-family: "orbitron";
   margin-bottom: 40px;
 }
 
 header nav a {
-  font: 16px/1 "orbitron";
+  font: 500 16px/1 "orbitron";
   margin-right: 30px;
 }
-main p {
-  font: 16px/2 "arial", "돋움";
+
+/* main */
+main {
+  margin-bottom: 80px;
 }
+main h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+main figure {
+  width: 300px;
+  height: 300px;
+  border: 3px solid red;
+}
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* footer */
 footer ul {
   font-size: 100px;
   color: aqua;
