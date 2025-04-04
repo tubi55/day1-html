@@ -22,7 +22,7 @@ header h1 {
   margin-bottom: 20px;
   font-size: 3rem;
   text-align: center;
-  color: var(--point-color);
+  color: rgba(var(--point-rgb), 0.5);
 }
 
 header nav a {
@@ -69,6 +69,7 @@ main p {
   line-height: 1.5;
   margin-bottom: 30px;
   text-align: justify;
+  opacity: 0.5;
 }
 main a {
   background-color: black;
