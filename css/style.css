@@ -10,6 +10,7 @@ html {
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   color: inherit;
   font-family: "Noto Sans KR";
 }
@@ -29,11 +30,6 @@ img {
   object-fit: cover;
 }
 
-body {
-  padding: 100px;
-  background-color: gray;
-}
-
 /*
   효율적인 RWD 작업을 위한 규칙
   1. 모바일 디바이스에서는 가로폭의 총합이 100%작업 (가로축에 px불가, 여백포함)
@@ -41,6 +37,11 @@ body {
   3. 높이값은 가급적 고정 px
 
 */
+body {
+  padding: 100px;
+  background-color: gray;
+}
+
 div {
   width: 980px;
   background-color: white;
@@ -121,6 +122,18 @@ div footer p {
   }
   div header .btnMobileMenu {
     display: block;
+  }
+}
+@media screen and (max-width: 680px) {
+  body {
+    padding: 0px;
+  }
+  div {
+    width: 100%;
+    border-radius: 0px;
+  }
+  div header h1 {
+    font-size: 1.2rem;
   }
 }
 main {

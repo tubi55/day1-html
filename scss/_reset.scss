@@ -7,6 +7,8 @@ html {
 * {
   margin: 0px;
   padding: 0px;
+  // padding값을 기존 블록요소 너비, 높이에 흡수 시킴
+  box-sizing: border-box;
   color: inherit;
   font-family: "Noto Sans KR";
 }
@@ -21,10 +23,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-body {
-  padding: 100px;
-  background-color: gray;
 }
 
 /*
