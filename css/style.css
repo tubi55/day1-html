@@ -201,4 +201,16 @@ main article a:hover {
   background-color: var(--point-lch);
 }
 
+@media screen and (max-width: 1200px) {
+  main {
+    flex-wrap: wrap;
+  }
+  main figure {
+    width: 100%;
+  }
+  main article {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

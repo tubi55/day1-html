@@ -54,3 +54,22 @@ main {
     }
   }
 }
+
+// tablet
+@media screen and (max-width: 1200px) {
+  main {
+    flex-wrap: wrap;
+
+    figure {
+      width: 100%;
+    }
+
+    article {
+      width: 100%;
+    }
+  }
+}
+
+// M.P
+@media screen and (max-width: 680px) {
+}
