@@ -1,15 +1,8 @@
-/*
-  lch (lightness, chroma, hue) 색상 표현 방식
-*/
-
 :root {
-  --point-color: rgba(255, 105, 180, 0.5);
-  --point-rgb: 255, 105, 100;
-  --point-lch: lch(70% 60 180 / 0.5);
+  --point-lch: lch(41.85% 96.72 322.41);
 }
 
 html {
-  /* html의 폰트 크기 지정시 기본 rem단위 수정 가능 */
   font-size: 16px;
 }
 
