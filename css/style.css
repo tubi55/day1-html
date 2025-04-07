@@ -5,7 +5,7 @@ body {
   background-color: gray;
 }
 div {
-  width: 600px;
+  width: 980px;
   background-color: white;
   padding: 50px;
   margin: 0px auto;
@@ -15,21 +15,27 @@ div {
 
 /*header*/
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 header h1 {
   font-family: "orbitron";
-  margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: center;
   color: var(--point-lch);
+}
+header nav {
+  display: flex;
+  gap: 40px;
 }
 
 header nav a {
   font: 500 0.8rem/1 "orbitron";
   letter-spacing: 1px;
-  margin-right: 30px;
-  display: inline-block;
   transition: 0.5s;
 }
 header nav a:hover {
@@ -93,14 +99,18 @@ main a:hover {
 footer {
   border-top: 1px solid black;
   padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 footer ul {
   font-size: 1.2rem;
-  text-align: right;
+  display: flex;
+  gap: 10px;
+  order: 2;
 }
 footer ul li {
   color: var(--point-lch);
-  display: inline-block;
   transition: 0.5s;
 }
 footer ul li:hover {
@@ -109,5 +119,5 @@ footer ul li:hover {
 }
 footer p {
   font-size: 0.8rem;
-  text-align: right;
+  order: 1;
 }
