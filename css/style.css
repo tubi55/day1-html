@@ -109,7 +109,7 @@ div footer p {
 
 @media screen and (max-width: 1200px) {
   div {
-    width: 80%;
+    width: 90%;
   }
   div header {
     justify-content: space-between;
@@ -134,6 +134,21 @@ div footer p {
   }
   div header h1 {
     font-size: 1.2rem;
+  }
+  div footer {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  div footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  div footer p {
+    width: 100%;
+    text-align: center;
   }
 }
 main {
