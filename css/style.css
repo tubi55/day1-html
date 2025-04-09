@@ -1,5 +1,5 @@
 :root {
-  --point-lch: hotpink;
+  --point-lch: lch(65.48% 65.13 350.58);
 }
 
 html {
@@ -199,9 +199,15 @@ main article a:hover {
   }
   main figure {
     width: 100%;
+    height: 50vw;
   }
   main article {
     width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  main figure {
+    height: 70vw;
   }
 }
 

@@ -63,10 +63,20 @@ main {
 
     figure {
       width: 100%;
+      height: 50vw;
     }
 
     article {
       width: 100%;
+    }
+  }
+}
+
+// m.p
+@media screen and (max-width: variable.$wid_mp) {
+  main {
+    figure {
+      height: 70vw;
     }
   }
 }
