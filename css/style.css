@@ -22,6 +22,8 @@ ol {
 
 a {
   text-decoration: none;
+  font-family: inherit;
+  color: inherit;
 }
 
 img {
@@ -55,6 +57,9 @@ body {
   font-family: "orbitron";
   font-size: 1.8rem;
   text-align: center;
+  color: black;
+}
+.wrap header h1:hover {
   color: var(--point-lch);
 }
 .wrap header nav {
@@ -125,12 +130,12 @@ body {
   order: 2;
 }
 .wrap footer ul li {
-  color: var(--point-lch);
+  color: black;
   transition: 0.5s;
 }
 .wrap footer ul li:hover {
-  transform: rotate(360deg) scale(0);
-  opacity: 0;
+  transform: scale(1.2);
+  color: var(--point-lch);
 }
 .wrap footer p {
   font-size: 0.8rem;
