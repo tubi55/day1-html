@@ -35,7 +35,7 @@ body {
 }
 
 div {
-  width: 980px;
+  width: 1200px;
   background-color: white;
   padding: 50px;
   margin: 0px auto;
@@ -101,7 +101,7 @@ div footer p {
 
 @media screen and (max-width: 1200px) {
   div {
-    width: 90%;
+    width: 100%;
   }
   div header {
     justify-content: space-between;
