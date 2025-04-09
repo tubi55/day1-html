@@ -48,6 +48,7 @@ body {
       height: 20px;
       position: relative;
       cursor: pointer;
+      display: none;
 
       p {
         width: 100%;
@@ -123,6 +124,17 @@ body {
   }
 }
 
+.mobileMenu {
+  width: 270px;
+  height: 100vh;
+  background: lch(var(--point-lch-code) / 0.8);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 0px 20px lch(0% 0 0 / 0.2);
+}
+
 // tablet
 @media screen and (max-width: variable.$wid_tablet) {
   .wrap {
@@ -139,7 +151,7 @@ body {
         display: none;
       }
 
-      .btnMobileMenu {
+      .btnToggle {
         display: block;
       }
     }
