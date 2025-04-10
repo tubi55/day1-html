@@ -13,5 +13,10 @@ fetch(req_url)
   })
   .then((json) => {
     //json데이터 변환이 완료되면 최종 데이터 콘솔로 확인
-    console.log(json);
+    const youtubeData = json.items;
+
+    youtubeData.forEach((data, index) => {
+      console.log(data);
+      console.log(data.snippet.title);
+    });
   });
