@@ -3,8 +3,10 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   const formData = new FormData(form);
 
+  //문자열.trim() : 문자열 양옆의 빈 공백문제를 제거해서 정리
+
   // 사용자 이름 인증시 메인이동, 그렇지 않으면 오류 콘솔 출력
-  if (formData.get("username").length < 2) {
+  if (formData.get("username").trim().length < 2) {
     e.preventDefault();
     console.error("이름은 최소 2글자 이상 입력하세요.");
   }
@@ -29,19 +31,26 @@ form.addEventListener("submit", (e) => {
 
   //남기는 말은 최소글자 5글자 이상 최대글자수 10글자 이하일때 이하동일
   if (
-    formData.get("comments").length < 4 ||
-    formData.get("comments").length >= 10
+    formData.get("comments").trim().length < 4 ||
+    formData.get("comments").trim().length >= 10
   ) {
     e.preventDefault();
     console.error("나기는 말을 5글자 이상 10글자 미만으로 입력하세요.");
   }
 
-  // 비밀번호 인증 처리 (특수문자, 텍스트, 숫자 모두 포함, 5글자 이상)
-  //정규표현식 /[포함시킬 특수문자]/
-  const spc = /[!@#$%^&*()]/;
+  // 비밀번호 인증 구현 (특수문자, 문자, 숫자 모두 포함)
+  // 정규표현식(RgEx, Regular Expression)을 이용해서 특수문자, 문자, 숫자가 비밀번호에 포함되었는지 확인하는 방법
 
-  //정규표현식조건.test(검사할문자열)
-  //spc정규표헌식 조건으로 pwd1폼 요소의 값을 체크
-  //특수 문자가 있으면 isSpc는 true, 없으면 false
-  const isSpc = spc.test(formData.get("pwd1"));
+  // 입력받은 비밀번호 변수에 저장
+  const pwd1 = formData.get("pwd1");
+
+  // 테스트할 조건을 정규표현식으로 미리 설정
+  const spc = /[!@#$%^&*()]/;
+  const str = /[a-zA-Z]/;
+  const num = /[0-9]/;
+
+  if (!spc.test(pwd1) || !str.test(pwd1) || !num.test(pwd1)) {
+    e.preventDefault();
+    console.error("비밀번호에 특수문자, 문자, 숫자를 모두 포함하세요.");
+  }
 });
