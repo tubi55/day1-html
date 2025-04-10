@@ -35,4 +35,13 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.error("나기는 말을 5글자 이상 10글자 미만으로 입력하세요.");
   }
+
+  // 비밀번호 인증 처리 (특수문자, 텍스트, 숫자 모두 포함, 5글자 이상)
+  //정규표현식 /[포함시킬 특수문자]/
+  const spc = /[!@#$%^&*()]/;
+
+  //정규표현식조건.test(검사할문자열)
+  //spc정규표헌식 조건으로 pwd1폼 요소의 값을 체크
+  //특수 문자가 있으면 isSpc는 true, 없으면 false
+  const isSpc = spc.test(formData.get("pwd1"));
 });
