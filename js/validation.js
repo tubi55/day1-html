@@ -53,4 +53,28 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.error("비밀번호에 특수문자, 문자, 숫자를 모두 포함하세요.");
   }
+
+  // 비밀번호 확인
+  const pwd2 = formData.get("pwd2");
+
+  if (pwd1 !== pwd2) {
+    e.preventDefault();
+    console.error("두개의 비밀번호를 같게 입력하세요.");
+  }
+
+  // 이메일 인증처리
+  const email = formData.get("email");
+  const [forwardText, backwardText] = email.split("@");
+
+  //1. @앞뒤로 문자값 모두 존재 (1차실패시 인증 실패)
+  if (!forwardText || !backwardText) {
+    e.preventDefault();
+    console.error("@앞뒤로 문자값이 필요합니다.");
+  } else {
+    //2. 1번 조건이 만족된상태에서 다시 .앞뒤로 문자값 존재 (2차까지 인증완료되야함)
+    if (!backwardText.split(".")[0] || !backwardText.split(".")[1]) {
+      e.preventDefault();
+      console.error(".앞뒤로 문자값이 필요합니다.");
+    }
+  }
 });
