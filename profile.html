@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>실습 예제: 취업용 프로필 페이지 제작</title>
+
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/1d8113f26b.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Orbitron:wght@400..900&display=swap"
     rel="stylesheet">
-  <script defer src="js/common.js"></script>
+  <script type='module' src="js/common.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=686520320144ace7258e9627174887ba"></script>
+  <script type="module" src="js/map.js"></script>
+
+
 </head>
 
 <body>
@@ -47,6 +52,17 @@
 
         <a href="#" title="홍길동 작업물 페이지로 이동">My Works</a>
       </article>
+
+      <ul class="btns">
+        <li class="btn">지도</li>
+        <li class="btn">로드뷰</li>
+      </ul>
+
+      <div class="mapFrame">
+        <div id="map" class="on"></div>
+        <div id="view"></div>
+      </div>
+
     </main>
 
     <footer>
@@ -60,6 +76,7 @@
   </div>
 
   <aside class="mobileMenu"></aside>
+
 
 </body>
 
