@@ -25,9 +25,13 @@ const [btnMap, btnView] = document.querySelectorAll(".btns li");
 btnMap.addEventListener("click", (e) => {
   mapContainer.classList.add("on");
   viewContainer.classList.remove("on");
+  btnMap.classList.add("on");
+  btnView.classList.remove("on");
 });
 
 btnView.addEventListener("click", (e) => {
   mapContainer.classList.remove("on");
   viewContainer.classList.add("on");
+  btnMap.classList.remove("on");
+  btnView.classList.add("on");
 });
