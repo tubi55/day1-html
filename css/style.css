@@ -349,9 +349,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .work section article {
   width: 32%;
+  text-align: left;
 }
 .work section article h2 {
   font-weight: bold;
@@ -363,15 +365,57 @@ body {
   width: 100%;
   height: 10vw;
   margin-bottom: 10px;
+  filter: saturate(0);
+  transition: 0.5s;
+}
+.work section article figure:hover {
+  filter: saturate(1.6);
 }
 .work section article p {
   font-size: 0.8rem;
+  line-height: 1.2;
   text-align: justify;
-  margin-bottom: 20px;
+  opacity: 0.6;
 }
 .work section article span {
-  font-size: 0.6rem;
-  color: orange;
+  font-size: 0.7rem;
+  color: var(--point-lch);
+  font-family: "orbitron";
+}
+
+.popup {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: black;
+  margin-left: -40%;
+  margin-top: -40vh;
+  display: none;
+  padding: 100px;
+}
+.popup .closePop {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.popup .closePop:hover {
+  color: var(--point-lch);
+}
+.popup .con {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+}
+.popup .con iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
