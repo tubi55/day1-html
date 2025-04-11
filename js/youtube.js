@@ -6,7 +6,6 @@ const req_url = `${base_url}?part=snippet&playlistId=${pid}&key=${api_key}&maxRe
 
 const frame = document.querySelector(".frame");
 
-//요청 url을 인자로 전달해서 서버에 데이터 요청후 가져오기
 fetch(req_url)
   .then((data) => {
     return data.json();
@@ -28,7 +27,6 @@ fetch(req_url)
         tit = data.snippet.title;
       }
 
-      // (조건식)?참일때 실행구문 : 거짓일때 실행구문;
       data.snippet.description.length > 120
         ? (desc = data.snippet.description.substring(0, 120) + "...")
         : (desc = data.snippet.description);
