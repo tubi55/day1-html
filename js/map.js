@@ -2,6 +2,7 @@ const mapContainer = document.querySelector("#map");
 const mapOption = {
   center: new kakao.maps.LatLng(37.512723468898294, 127.06076770855582),
 };
+
 renderMap();
 window.addEventListener("resize", renderMap);
 
@@ -10,6 +11,11 @@ function renderMap() {
   const map = new kakao.maps.Map(mapContainer, mapOption);
   const marker = new kakao.maps.Marker({ position: mapOption.center });
   marker.setMap(map);
+  const mapTypeControl = new kakao.maps.MapTypeControl();
+  map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+  const zoomControl = new kakao.maps.ZoomControl();
+  map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+  map.setZoomable(false);
 }
 
 const viewContainer = document.querySelector("#view");
