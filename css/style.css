@@ -236,6 +236,19 @@ body {
     text-align: center;
   }
 }
+.home .btnColors {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.home .btnColors li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .profile {
   margin-bottom: 40px;
   display: flex;
